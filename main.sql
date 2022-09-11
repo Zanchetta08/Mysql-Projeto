@@ -29,3 +29,5 @@ Insert into materias (nome) Values ('Desenvolvimento WEB'), ('Organização de S
 Insert into alunos (nome, materia) Values ('Alexander Wood', '1'), ('Alan Taylor', '2'), ('James Johnson', '2'), ('Brenda Armstrong', '2'), ('Andrew Johnson', '1'), ('Tyler Rush', '1');
 
 Insert into professores (nome, materia) Values ('Joana Pereira', '2'), ('Kevin Ribeiro', '1');
+
+select alunos.nome, alunos.RA, materias.nome, materias.RM, professores.nome, professores.RP from alunos join materias on alunos.materia = materias.RM join professores on professores.materia = materias.RM order by materias.RM
